@@ -1,10 +1,21 @@
 package com.cn.test.yjrc.controller;
 
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
 import com.cn.test.yjrc.domain.ResponseResult;
 import com.cn.test.yjrc.domain.Result;
+import com.cn.test.yjrc.utils.Base64Utils;
+import com.cn.test.yjrc.utils.FileToJson;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.*;
+import sun.misc.BASE64Decoder;
+import sun.misc.BASE64Encoder;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
 
 /**
  * @author wangdakai
@@ -26,11 +37,17 @@ public class UnitController {
 
     @PostMapping("/unitFile")
     @ApiOperation(value = "获取单位附件信息")
-    public String unitFile(@RequestParam String status){
-       /* if (status!=null&&status!=""){
-            return  ResponseResult.getError(status);
-        }*/
-        return Result.unit_file;
+    public String unitFile(@RequestParam String status) throws IOException {
+        String json ="";
+        InputStream config = getClass().getResourceAsStream("/overview/getEditUnitFileInfo.json");
+        if (config == null) {
+            throw new RuntimeException("读取文件失败");
+        } else {
+            json = JSON.parseObject(config, JSONObject.class).toString();
+        }
+        json.replace("xx", Base64Utils.ImageToBase64("/pic/yhd.jpg"));
+        json.replace("yy", Base64Utils.ImageToBase64("/pic/tg.jpg"));
+        return json;
     }
 
     @PostMapping("/unitBasic")
@@ -50,5 +67,30 @@ public class UnitController {
         }*/
         return Result.getNotifications;
     }
+
+    // 模拟接收到保存
+    // 模拟获取 一般信息，经办人信息，资质信息
+
+    @PostMapping("/getEditUnitInfo")
+    @ApiOperation(value = "单位获取政策通知")
+    public JSONObject getEditUnitInfo(@RequestParam String status) throws IOException {
+        JSONObject getEditUnitInfo = FileToJson.getDictionary("getEditUnitInfo");
+        return getEditUnitInfo;
+    }
+
+    @PostMapping("/getEditUnitQualifiedInfo")
+    @ApiOperation(value = "单位获取政策通知")
+    public JSONObject getEditUnitQualifiedInfo(@RequestParam String status) throws IOException {
+        JSONObject getEditUnitInfo = FileToJson.getDictionary("getEditUnitQualifiedInfo");
+        return getEditUnitInfo;
+    }
+
+    @PostMapping("/getEditUnitHandlerInfo")
+    @ApiOperation(value = "单位获取政策通知")
+    public JSONObject getEditUnitHandlerInfo(@RequestParam String status) throws IOException {
+        JSONObject getEditUnitInfo = FileToJson.getDictionary("getEditUnitHandlerInfo");
+        return getEditUnitInfo;
+    }
+
 
 }
