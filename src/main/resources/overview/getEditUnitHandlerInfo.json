@@ -2,11 +2,11 @@
   "status": 200,
   "msg": "success",
   "result": {
-    "unitHandlerInfo": {
+
       "handlerName": "张三",
       "handlerPhone": "13800138000",
       "emergencyName": "李四",
       "emergencyPhone": "15000000000"
-    }
+
   }
 }
