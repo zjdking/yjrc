@@ -47,7 +47,7 @@ public class Result {
             "    \"msg\": \"success\",\n" +
             "    \"result\": {\n" +
             "        \"unitInfo\": [\n" +
-            "            {\n" +
+            "            {\n" +"\"unitPhone\": \"010-88511155\""+
             "                \"unitName\": \"首都信息发展股份有限公司\",\n" +
             "                \"unitCode\": \"9111XXXXXXXXXXXXXX\",\n" +
             "                \"registeredCapital\": 1000,\n" +

@@ -1,11 +1,14 @@
 package com.cn.test.yjrc.controller;
 
+import com.alibaba.fastjson.JSONObject;
 import com.cn.test.yjrc.domain.ResponseResult;
 import com.cn.test.yjrc.domain.Result;
+import com.cn.test.yjrc.utils.FileToJson;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.*;
 
+import java.io.IOException;
 import java.util.Random;
 
 /**
@@ -53,6 +56,13 @@ public class PersonController {
         return Result.person_Notifications;
     }
 
+
+    @PostMapping("/previewPersonInfo")
+    @ApiOperation(value = "获取个人")
+    public JSONObject previewPersonInfo(@RequestParam String status) throws IOException {
+        JSONObject getEditUnitInfo = FileToJson.getDictionary("getEditUnitHandlerInfo");
+        return getEditUnitInfo;
+    }
 
 
 
