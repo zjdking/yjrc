@@ -2,7 +2,7 @@
       "status": 200,
       "msg": "success",
       "result": {
-
+        "unitCode": "XX",
                   "unitNatureCode": 1,
                   "organName": "北京市科学技术委员会、北京市财政局、北京市国家税务局、北京市地方税务局",
                   "certificateNumber": "GR2017110XXXXX",

@@ -51,18 +51,18 @@ public class Result {
             "                \"unitName\": \"首都信息发展股份有限公司\",\n" +
             "                \"unitCode\": \"9111XXXXXXXXXXXXXX\",\n" +
             "                \"registeredCapital\": 1000,\n" +
-            "                \"registeredCapitalType\": \"人民币\",\n" +
+            "                \"registeredCapitalType\": 1,\n" +
             "                \"legalRepresentative\": \"李四\",               \n" +
             "                \"establishmentDate\": \"1998-01-23\",\n" +
-            "                \"unitType\": \"股份有限公司\",\n" +
-            "                \"district\": \"海淀区\",\n" +
+            "                \"unitType\": 2,\n" +
+            "                \"district\": 110108,\n" +
             "                \"unitAddress\": \"知春路23号量子银座大厦12层\",\n" +
             "                \"scope\": \"提供信息源服务；电子商务服务；网络互联、电子计算机设备及软硬件、通信软硬件产品的技术开发、技术咨询、技术服务、技术培训；信息及网络系统集成及代理；销售电子计算机外部设备；药品招标代理；自营和代理各类商品及技术的进出口业务，但国家限定公司经营或禁止出口的商品及技术除外；专业承包。（其中“专业承包”需要取得专项审批之后，方可经营。）\"\n" +
             "            }\n" +
             "        ],\n" +
             "        \"unitQualifiedInfo\": [\n" +
             "            {\n" +
-            "                \"unitNature\": \"高新技术企业\",\n" +
+            "                \"unitNature\": 1,\n" +
             "                \"organName\": \"北京市科学技术委员会、北京市财政局、北京市国家税务局、北京市地方税务局\",\n" +
             "                \"certificateNumber\": \"GR2017110XXXXX\",\n" +
             "                \"certificateDate\": \"2017-10-25\"\n" +
@@ -157,16 +157,16 @@ public class Result {
             "        \"personalInfo\": [\n" +
             "            {\n" +
             "                \"perName\": \"测试用户\",\n" +
-            "                \"gender\": \"男\",\n" +
+            "                \"gender\": 0,\n" +
             "                \"perPhone\": \"13800138000\",\n" +
-            "                \"nation\": \"汉族\",\n" +
-            "                \"political\": \"群众\",\n" +
-            "                \"perType\": \"居民身份证\",\n" +
+            "                \"nation\": 1,\n" +
+            "                \"political\": 0,\n" +
+            "                \"perType\": 0,\n" +
             "                \"perCode\": \"110108198800000000\",\n" +
-            "                \"province\": \"四川省\",\n" +
-            "                \"marital\": \"未婚\",\n" +
-            "                \"city\": \"成都市\",\n" +
-            "                \"district\": \"海淀区\",\n" +
+            "                \"province\": 11,\n" +
+            "                \"marital\": 1,\n" +
+            "                \"city\": 110101,\n" +
+            "                \"district\": 110108,\n" +
             "                \"address\": \"安宁庄路11号院43号楼一单元5层502门\",\n" +
             "                \"isRelation\": 1,\n" +
             "                \"unitName\": \"首都信息发展股份有限公司\",\n" +
@@ -178,9 +178,9 @@ public class Result {
             "        \"educationInfo\": {\n" +
             "            \"xlData\": [\n" +
             "                {\n" +
-            "                    \"xlState\": \"研究生\",\n" +
+            "                    \"xlState\": 40,\n" +
             "                    \"xlCode\": \"XL0123456789\",\n" +
-            "                    \"state\": \"无效\",\n" +
+            "                    \"state\": 0,\n" +
             "                    \"date\": \"2019-01-06\",\n" +
             "                    \"stateCode\": \"error\",\n" +
             "                    \"reason\": \"学历认证报告编号与最高学历不匹配\"\n" +
@@ -188,9 +188,9 @@ public class Result {
             "            ],\n" +
             "            \"xwData\": [\n" +
             "                {\n" +
-            "                    \"xwState\": \"硕士\",\n" +
+            "                    \"xwState\": 20,\n" +
             "                    \"xwCode\": \"XW0123456789\",\n" +
-            "                    \"state\": \"有效\",\n" +
+            "                    \"state\": 1,\n" +
             "                    \"date\": \"2019-01-06\",\n" +
             "                    \"stateCode\": \"success\",\n" +
             "                    \"reason\": \"\"\n" +
@@ -198,7 +198,7 @@ public class Result {
             "            ],\n" +
             "            \"zcData\": [\n" +
             "                {\n" +
-            "                    \"zcState\": \"是\",\n" +
+            "                    \"zcState\": 1,\n" +
             "                    \"zcInfo\": [\n" +
             "                        {\n" +
             "                            \"zcName\": \"高级工程师\",\n" +
@@ -214,14 +214,14 @@ public class Result {
             "                \"startDate\": \"2017-03-01\",\n" +
             "                \"endDate\": \"2020-12-31\",\n" +
             "                \"unitName\": \"首都信息发展股份有限公司\",\n" +
-            "                \"location\": \"北京市\",\n" +
+            "                \"location\": 11,\n" +
             "                \"duty\": \"项目经理\"\n" +
             "            },\n" +
             "            {\n" +
             "                \"startDate\": \"2013-09-01\",\n" +
             "                \"endDate\": \"2017-03-01\",\n" +
             "                \"unitName\": \"北京科技公司\",\n" +
-            "                \"location\": \"北京市\",\n" +
+            "                \"location\": 11,\n" +
             "                \"duty\": \"工程师\"\n" +
             "            }\n" +
             "        ]\n" +

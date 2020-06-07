@@ -2,7 +2,7 @@
   "status": 200,
   "msg": "success",
   "result": {
-
+      "unitCode": "XX",
       "unitTypeCode": 2,
       "establishmentDate": "1998-01-23",
       "registeredCapital": 1000,
