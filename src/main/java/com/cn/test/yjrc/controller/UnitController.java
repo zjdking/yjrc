@@ -37,9 +37,9 @@ public class UnitController {
 
     @PostMapping("/unitFile")
     @ApiOperation(value = "获取单位附件信息")
-    public JSONObject unitFile(@RequestParam String status) throws IOException {
+    public String unitFile(@RequestParam String status) throws IOException {
         JSONObject getEditUnitInfo = FileToJson.getDictionary("getEditUnitFileInfo");
-        return getEditUnitInfo;
+        return  getEditUnitInfo.toString().replace("XX",status);
        /* String json ="";
         InputStream config = getClass().getResourceAsStream("/overview/getEditUnitFileInfo.json");
         if (config == null) {
