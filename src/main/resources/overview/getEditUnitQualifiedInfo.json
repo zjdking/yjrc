@@ -3,10 +3,10 @@
       "msg": "success",
       "result": {
 
-                  "unitNatureCode": 1,
-                  "organName": "北京市科学技术委员会、北京市财政局、北京市国家税务局、北京市地方税务局",
-                  "certificateNumber": "GR2017110XXXXX",
-                  "certificateDate": "2017-10-25"
+        "unitNature": 1,
+        "organName": "北京市科学技术委员会、北京市财政局、北京市国家税务局、北京市地方税务局",
+        "certificateNumber": "GR2017110XXXXX",
+        "certificateDate": "2017-10-25"
 
       }
 }

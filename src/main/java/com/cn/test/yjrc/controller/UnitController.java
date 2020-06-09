@@ -37,8 +37,10 @@ public class UnitController {
 
     @PostMapping("/unitFile")
     @ApiOperation(value = "获取单位附件信息")
-    public String unitFile(@RequestParam String status) throws IOException {
-        String json ="";
+    public JSONObject unitFile(@RequestParam String status) throws IOException {
+        JSONObject getEditUnitInfo = FileToJson.getDictionary("getEditUnitFileInfo");
+        return getEditUnitInfo;
+       /* String json ="";
         InputStream config = getClass().getResourceAsStream("/overview/getEditUnitFileInfo.json");
         if (config == null) {
             throw new RuntimeException("读取文件失败");
@@ -46,8 +48,8 @@ public class UnitController {
             json = JSON.parseObject(config, JSONObject.class).toString();
         }
         json.replace("xx", Base64Utils.ImageToBase64("/pic/yhd.jpg"));
-        json.replace("yy", Base64Utils.ImageToBase64("/pic/tg.jpg"));
-        return json;
+        json.replace("yy", Base64Utils.ImageToBase64("/pic/tg.jpg"));*/
+
     }
 
     @PostMapping("/unitBasic")

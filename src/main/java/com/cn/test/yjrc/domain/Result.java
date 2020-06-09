@@ -157,48 +157,47 @@ public class Result {
             "        \"personalInfo\": [\n" +
             "            {\n" +
             "                \"perName\": \"测试用户\",\n" +
-            "                \"gender\": \"男\",\n" +
+            "                \"gender\": 0,\n" +
             "                \"perPhone\": \"13800138000\",\n" +
-            "                \"nation\": \"汉族\",\n" +
-            "                \"political\": \"群众\",\n" +
-            "                \"perType\": \"居民身份证\",\n" +
+            "                \"nation\": 1,\n" +
+            "                \"political\": 0,\n" +
+            "                \"perType\": 0,\n" +
             "                \"perCode\": \"110108198800000000\",\n" +
-            "                \"province\": \"四川省\",\n" +
-            "                \"marital\": \"未婚\",\n" +
-            "                \"city\": \"成都市\",\n" +
-            "                \"district\": \"海淀区\",\n" +
+            "                \"province\": 11,\n" +
+            "                \"marital\": 1,\n" +
+            "                \"city\": 110101,\n" +
+            "                \"district\": 110108,\n" +
             "                \"address\": \"安宁庄路11号院43号楼一单元5层502门\",\n" +
             "                \"isRelation\": 1,\n" +
             "                \"unitName\": \"首都信息发展股份有限公司\",\n" +
             "                \"unitPhone\": \"010-88511155\",\n" +
-            "                \"unitAddress\": \"北京市海淀区知春路23号量子银座大厦12层首都信息发展股份有限公司\",\n" +
+            "\t\t\"unitDistrict\":110108,\n" +
+            "                \"unitAddress\": \"知春路23号量子银座大厦12层首都信息发展股份有限公司\",\n" +
             "                \"image\": \"../../../../assets/photo.jpg\"\n" +
             "            }\n" +
             "        ],\n" +
             "        \"educationInfo\": {\n" +
             "            \"xlData\": [\n" +
             "                {\n" +
-            "                    \"xlState\": \"研究生\",\n" +
+            "                    \"xlState\": 40,\n" +
             "                    \"xlCode\": \"XL0123456789\",\n" +
-            "                    \"state\": \"无效\",\n" +
+            "                    \"state\": 0,\n" +
             "                    \"date\": \"2019-01-06\",\n" +
-            "                    \"stateCode\": \"error\",\n" +
             "                    \"reason\": \"学历认证报告编号与最高学历不匹配\"\n" +
             "                }\n" +
             "            ],\n" +
             "            \"xwData\": [\n" +
             "                {\n" +
-            "                    \"xwState\": \"硕士\",\n" +
+            "                    \"xwState\": 20,\n" +
             "                    \"xwCode\": \"XW0123456789\",\n" +
-            "                    \"state\": \"有效\",\n" +
+            "                    \"state\": 1,\n" +
             "                    \"date\": \"2019-01-06\",\n" +
-            "                    \"stateCode\": \"success\",\n" +
             "                    \"reason\": \"\"\n" +
             "                }\n" +
             "            ],\n" +
             "            \"zcData\": [\n" +
             "                {\n" +
-            "                    \"zcState\": \"是\",\n" +
+            "                    \"zcState\": 1,\n" +
             "                    \"zcInfo\": [\n" +
             "                        {\n" +
             "                            \"zcName\": \"高级工程师\",\n" +
@@ -214,17 +213,23 @@ public class Result {
             "                \"startDate\": \"2017-03-01\",\n" +
             "                \"endDate\": \"2020-12-31\",\n" +
             "                \"unitName\": \"首都信息发展股份有限公司\",\n" +
-            "                \"location\": \"北京市\",\n" +
+            "                \"location\": 11,\n" +
             "                \"duty\": \"项目经理\"\n" +
             "            },\n" +
             "            {\n" +
             "                \"startDate\": \"2013-09-01\",\n" +
             "                \"endDate\": \"2017-03-01\",\n" +
             "                \"unitName\": \"北京科技公司\",\n" +
-            "                \"location\": \"北京市\",\n" +
+            "                \"location\": 11,\n" +
             "                \"duty\": \"工程师\"\n" +
             "            }\n" +
-            "        ]\n" +
+            "        ],\n" +
+            "\t\"fileInfo\":[\n" +
+            "            {\n" +
+            "                \"perImage\": \"group1_TTAwLzAwLzAwL2N0ZVVhMTdlNlJHQUhtZU1BQUFPN2M5RWl6STExMi5qcGc=\",\n" +
+            "                \"zcImage\": \"group1_TTAwLzAwLzAwL2N0ZVVhMTdlNlItQVZhWU1BQUlIRHNFeVVUbzgyNC5qcGc=\"\n" +
+            "            }\t\n" +
+            "\t]\n" +
             "    }\n" +
             "}";
 
