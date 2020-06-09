@@ -16,7 +16,7 @@ public class Result {
             "                \"unitName\": \"首都信息发展股份有限公司\",\n" +
             "                \"unitCode\": \"9111XXXXXXXXXXXXXX\",\n" +
             "                \"unitType\": 1,\n" +
-            "                \"district\": 101,\n" +
+            "                \"district\": 110108,\n" +
             "                \"unitAddress\": \"知春路23号量子银座大厦12层\",\n" +
             "                \"handlerName\": \"张三\",\n" +
             "                \"handlerPhone\": \"13800138000\"\n" +
