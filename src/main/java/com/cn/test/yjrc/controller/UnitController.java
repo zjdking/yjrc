@@ -75,23 +75,24 @@ public class UnitController {
 
     @PostMapping("/getEditUnitInfo")
     @ApiOperation(value = "单位获取政策通知")
-    public JSONObject getEditUnitInfo(@RequestParam String status) throws IOException {
+    public String getEditUnitInfo(@RequestParam String status) throws IOException {
         JSONObject getEditUnitInfo = FileToJson.getDictionary("getEditUnitInfo");
-        return getEditUnitInfo;
+        String xx = getEditUnitInfo.toString().replace("XX", status);
+        return xx;
     }
 
     @PostMapping("/getEditUnitQualifiedInfo")
     @ApiOperation(value = "单位获取政策通知")
-    public JSONObject getEditUnitQualifiedInfo(@RequestParam String status) throws IOException {
+    public String getEditUnitQualifiedInfo(@RequestParam String status) throws IOException {
         JSONObject getEditUnitInfo = FileToJson.getDictionary("getEditUnitQualifiedInfo");
-        return getEditUnitInfo;
+       return  getEditUnitInfo.toString().replace("XX",status);
     }
 
     @PostMapping("/getEditUnitHandlerInfo")
     @ApiOperation(value = "单位获取政策通知")
-    public JSONObject getEditUnitHandlerInfo(@RequestParam String status) throws IOException {
+    public String getEditUnitHandlerInfo(@RequestParam String status) throws IOException {
         JSONObject getEditUnitInfo = FileToJson.getDictionary("getEditUnitHandlerInfo");
-        return getEditUnitInfo;
+        return getEditUnitInfo.toString().replace("XX",status);
     }
 
 

@@ -51,18 +51,18 @@ public class Result {
             "                \"unitName\": \"首都信息发展股份有限公司\",\n" +
             "                \"unitCode\": \"9111XXXXXXXXXXXXXX\",\n" +
             "                \"registeredCapital\": 1000,\n" +
-            "                \"registeredCapitalType\": \"人民币\",\n" +
+            "                \"registeredCapitalType\": 1,\n" +
             "                \"legalRepresentative\": \"李四\",               \n" +
             "                \"establishmentDate\": \"1998-01-23\",\n" +
-            "                \"unitType\": \"股份有限公司\",\n" +
-            "                \"district\": \"海淀区\",\n" +
+            "                \"unitType\": 2,\n" +
+            "                \"district\": 110108,\n" +
             "                \"unitAddress\": \"知春路23号量子银座大厦12层\",\n" +
             "                \"scope\": \"提供信息源服务；电子商务服务；网络互联、电子计算机设备及软硬件、通信软硬件产品的技术开发、技术咨询、技术服务、技术培训；信息及网络系统集成及代理；销售电子计算机外部设备；药品招标代理；自营和代理各类商品及技术的进出口业务，但国家限定公司经营或禁止出口的商品及技术除外；专业承包。（其中“专业承包”需要取得专项审批之后，方可经营。）\"\n" +
             "            }\n" +
             "        ],\n" +
             "        \"unitQualifiedInfo\": [\n" +
             "            {\n" +
-            "                \"unitNature\": \"高新技术企业\",\n" +
+            "                \"unitNature\": 1,\n" +
             "                \"organName\": \"北京市科学技术委员会、北京市财政局、北京市国家税务局、北京市地方税务局\",\n" +
             "                \"certificateNumber\": \"GR2017110XXXXX\",\n" +
             "                \"certificateDate\": \"2017-10-25\"\n" +
