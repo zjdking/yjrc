@@ -1,15 +1,18 @@
 package com.cn.test.yjrc.controller;
 
 import com.alibaba.fastjson.JSONObject;
-import com.cn.test.yjrc.domain.ResponseResult;
+import com.cn.test.yjrc.domain.EmployeeOutDTO;
 import com.cn.test.yjrc.domain.Result;
+import com.cn.test.yjrc.domain.WaitRelationEnterDTO;
 import com.cn.test.yjrc.utils.FileToJson;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.*;
 
 import java.io.IOException;
+import java.util.List;
 import java.util.Random;
+import java.util.stream.Collectors;
 
 /**
  * @author wangdakai
@@ -66,5 +69,38 @@ public class PersonController {
 
 
 
+    @PostMapping("/getWaitRelation")
+    @ApiOperation(value = "包装")
+    public List<EmployeeOutDTO> getWaitRelation(@RequestBody WaitRelationEnterDTO waitRelationEnterDTO) throws IOException {
+        // 需要通过名字进行过滤
+        //  将codes包装
+
+        List<EmployeeOutDTO> collect = waitRelationEnterDTO.getCodes().stream()
+                .map(e -> {
+                    EmployeeOutDTO waitRelation = new EmployeeOutDTO();
+                    Random random = new Random();
+                    waitRelation.setGender(random.nextInt(10) > 5 ? "男" : "女");
+                    waitRelation.setPerName("夏侯" + random.nextInt(10));
+                    waitRelation.setPerCode(e);
+
+                    waitRelation.setPerPhone("138" + random());
+                    return waitRelation;
+                })
+                .collect(Collectors.toList());
+
+        return collect;
+    }
+
+
+
+    private String random(){
+        // 产生8位的随机数
+        StringBuilder str = new StringBuilder();
+        Random random = new Random();
+        for(int i = 0;i<8;i++){
+            str.append(random.nextInt(10));
+        }
+        return str.toString();
+    }
 
 }

@@ -95,5 +95,17 @@ public class UnitController {
         return getEditUnitInfo.toString().replace("XX",status);
     }
 
+    @PostMapping("/getUnitInfoByRegistrationCode")
+    public String getUnitInfoByRegistrationCode(@RequestParam String registrationCode) throws IOException {
+        JSONObject getEditUnitInfo = null;
+        if("-1".equals(registrationCode)){
+             getEditUnitInfo = FileToJson.getDictionary("nullArray");
+
+        }else{
+            getEditUnitInfo = FileToJson.getDictionary("getUnitInfoByRegistrationCode");
+        }
+        return getEditUnitInfo.toString();
+    }
+
 
 }

@@ -1,0 +1,17 @@
+{
+  "status": 200,
+  "msg": "success",
+  "result": {
+    "unitInfo": [
+      {
+      "unitName": "首都信息发展股份有限公司",
+      "unitCode": "9111XXXXXXXXXXXXXX",
+      "unitType": 1,
+      "district": 110108,
+      "unitAddress": "知春路23号量子银座大厦12层",
+      "handlerName": "张三",
+      "handlerPhone": "13800138000"
+    }
+    ]
+  }
+}
