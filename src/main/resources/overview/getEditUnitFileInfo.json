@@ -1,6 +1,9 @@
 {
+    "status": 200,
+    "msg": "success",
+    "result": {
     "unitCode": "XX",
-    "qualifiedImgaeState": 1,
     "businessLicenseImage": "group1_TTAwLzAwLzAwL2N0ZVVhMTdlOGpLQWFEN0tBQURNUlB3eldNQTQzNi5qcGc=",
     "qualifiedImage": "group1_TTAwLzAwLzAwL2N0ZVVhMTdlOGxPQUUweVVBQUNXdThHMGFBZzgwOC5qcGc="
+    }
 }
