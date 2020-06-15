@@ -24,7 +24,7 @@ public class DictionaryContorller {
         JSONObject json = null;
         InputStream config = getClass().getResourceAsStream("/dictionary/"+name+".json");
         if (config == null) {
-            throw new RuntimeException("读取文件失败");
+            System.out.println("读取文件失败");
         } else {
             json = JSON.parseObject(config, JSONObject.class);
         }
