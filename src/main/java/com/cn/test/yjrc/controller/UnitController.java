@@ -29,9 +29,9 @@ public class UnitController {
     @PostMapping("/unitCompleted")
     @ApiOperation(value = "获取单位登录信息参数可以自己传")
     public String unitCompleted(@RequestParam String status){
-        int num=(int)(Math.random()*101);
-        int random= num>50?0:1;
-        return Result.unit_completed.replace("\"isComplete\": 1","\"isComplete\": "+random);
+       /* int num=(int)(Math.random()*101);
+        int random= num>50?0:1;    .replace("\"isComplete\": 1","\"isComplete\": "+random)*/
+        return Result.unit_completed;
     }
 
 

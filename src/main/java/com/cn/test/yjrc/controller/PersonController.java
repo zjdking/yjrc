@@ -26,9 +26,9 @@ public class PersonController {
     @PostMapping("/personCompleted")
     @ApiOperation(value = "获取个人登录信息（已完善个人信息）")
     public String personCompleted(@RequestParam String status){
-        int num=(int)(Math.random()*101);
-        int random= num>50?0:1;
-        return Result.person_completed.replace("\"isComplete\": 1","\"isComplete\": "+random);
+        /*int num=(int)(Math.random()*101);
+        int random= num>50?0:1;*/
+        return Result.person_completed;
     }
 
 

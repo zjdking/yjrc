@@ -43,6 +43,9 @@ public class Result {
             "}";
 
     public static  String unit_basic="{\n" +
+            "    \"status\": 200,\n" +
+            "    \"msg\": \"success\",\n" +
+            "    \"result\": {\n" +
             "    \"unitInfo\": [\n" +
             "        {\n" +
             "            \"unitName\": \"首都信息发展股份有限公司\",\n" +
@@ -77,7 +80,8 @@ public class Result {
             "            \"businessLicenseImage\": \"group1_TTAwLzAwLzAwL3JCUVZaRjdpNF9lQWNZelNBQURNUlAxNVdGSTA0NC5qcGc=\",\n" +
             "            \"qualifiedImage\": \"group1_TTAwLzAwLzAwL3JCUVZaRjdpNUR5QUY0ZUtBQUNXdTRldE5qazEyNC5qcGc=\"\n" +
             "        }\n" +
-            "}\n";
+            "}" +
+            "}";
 
     public static String getNotifications = "{\n" +
             "    \"status\": 200,\n" +
