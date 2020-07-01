@@ -1,6 +1,7 @@
 package com.cn.test.yjrc.controller;
 
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.HashMap;
@@ -11,7 +12,8 @@ import java.util.Map;
  * 2020/6/29 0029.
  * @version 1.0
  */
-@RestController("/handle")
+@RestController
+@RequestMapping("/handle")
 public class HandleController {
     @PostMapping("/getHandle")
     public Map<String,String> getHandle(String handlerID){
