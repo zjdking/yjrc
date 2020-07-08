@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 import java.util.List;
+import java.util.Map;
 
 @Data
 @NoArgsConstructor
@@ -14,5 +15,5 @@ public class WaitRelationEnterDTO implements Serializable {
 
     private static final long serialVersionUID = 7536808941898414067L;
     private String name;
-    private List<String> codes;
+    private List<Map<Long,String>> codes;
 }

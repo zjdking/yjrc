@@ -16,4 +16,5 @@ public class EmployeeOutDTO implements Serializable {
     private String gender;
     private String perCode;
     private String perPhone;
+    private Long id;
 }

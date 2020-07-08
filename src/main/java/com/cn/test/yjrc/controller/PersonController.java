@@ -81,7 +81,12 @@ public class PersonController {
                     Random random = new Random();
                     waitRelation.setGender(random.nextInt(10) > 5 ? "男" : "女");
                     waitRelation.setPerName("夏侯" + random.nextInt(10));
-                    waitRelation.setPerCode(e);
+                    for (Long id: e.keySet()) {
+                        waitRelation.setPerCode(e.get(id));
+
+                        waitRelation.setId(id);
+                    }
+
 
                     waitRelation.setPerPhone("138" + random());
                     return waitRelation;
