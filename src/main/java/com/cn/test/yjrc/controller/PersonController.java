@@ -23,6 +23,13 @@ import java.util.stream.Collectors;
 public class PersonController {
 
 
+    @PostMapping("/personBaiscState")
+    @ApiOperation(value = "检验个人基础信息是否有效")
+    public String personBaiscState(@RequestParam String status){
+        return "1";
+    }
+
+
     @PostMapping("/personCompleted")
     @ApiOperation(value = "获取个人登录信息（已完善个人信息）")
     public String personCompleted(@RequestParam String status){
