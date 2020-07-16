@@ -25,7 +25,7 @@ public class PersonController {
 
     @PostMapping("/personBaiscState")
     @ApiOperation(value = "检验个人基础信息是否有效")
-    public String personBaiscState(@RequestParam String status){
+    public String personBasicState(@RequestParam String perCode){
         return "1";
     }
 
