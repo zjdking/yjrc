@@ -26,6 +26,12 @@ import java.io.InputStream;
 public class UnitController {
 
 
+    @PostMapping("/unitBaiscState")
+    @ApiOperation(value = "检验单位基础信息是否有效")
+    public String personBasicState(@RequestParam String unitCode){
+        return "1";
+    }
+
     @PostMapping("/unitCompleted")
     @ApiOperation(value = "获取单位登录信息参数可以自己传")
     public String unitCompleted(@RequestParam String status){
