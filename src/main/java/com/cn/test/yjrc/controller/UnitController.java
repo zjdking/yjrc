@@ -4,10 +4,12 @@ import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.cn.test.yjrc.domain.ResponseResult;
 import com.cn.test.yjrc.domain.Result;
+import com.cn.test.yjrc.model.dto.GetOrganIds;
 import com.cn.test.yjrc.utils.Base64Utils;
 import com.cn.test.yjrc.utils.FileToJson;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import io.swagger.models.auth.In;
 import org.springframework.web.bind.annotation.*;
 import sun.misc.BASE64Decoder;
 import sun.misc.BASE64Encoder;
@@ -16,6 +18,8 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @author wangdakai
@@ -28,7 +32,7 @@ public class UnitController {
 
     @PostMapping("/unitBaiscState")
     @ApiOperation(value = "检验单位基础信息是否有效")
-    public String personBasicState(@RequestParam String unitCode){
+    public String unitBasicState(@RequestParam String unitCode){
         return "1";
     }
 
@@ -101,16 +105,31 @@ public class UnitController {
         return getEditUnitInfo.toString().replace("XX",status);
     }
 
-    @PostMapping("/getUnitInfoByRegistrationCode")
+@PostMapping("/getUnitInfoByRegistrationCode")
     public String getUnitInfoByRegistrationCode(@RequestParam String registrationCode) throws IOException {
         JSONObject getEditUnitInfo = null;
         if("-1".equals(registrationCode)){
-             getEditUnitInfo = FileToJson.getDictionary("nullArray");
+            getEditUnitInfo = FileToJson.getDictionary("nullArray");
 
         }else{
             getEditUnitInfo = FileToJson.getDictionary("getUnitInfoByRegistrationCode");
         }
         return getEditUnitInfo.toString();
+    }
+
+
+    @PostMapping("/getOrganIds")
+    public List<Integer> getOrganId(@RequestBody GetOrganIds getOrganIds){
+        List<Integer> organs = new ArrayList<>();
+        List<Integer> handleList = getOrganIds.getHandleList();
+        for(int i =0;i<handleList.size();i++){
+            if((i & 1)==0){
+                organs.add(101);
+            }else{
+                organs.add(102);
+            }
+        }
+        return organs;
     }
 
 
