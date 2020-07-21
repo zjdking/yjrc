@@ -90,7 +90,6 @@ public class PersonController {
                     waitRelation.setPerName("夏侯" + random.nextInt(10));
                     for (Long id: e.keySet()) {
                         waitRelation.setPerCode(e.get(id));
-
                         waitRelation.setId(id);
                     }
 
