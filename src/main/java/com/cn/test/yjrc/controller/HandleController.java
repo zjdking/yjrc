@@ -30,7 +30,7 @@ public class HandleController {
 
 
     @PostMapping("/getPersonalSnapshotSocialSecurityInfo")
-    @ApiOperation(value = "社保")
+    @ApiOperation(value = "获取社保信息")
     public String getPersonalSnapshotSocialSecurityInfo(@RequestParam String status) throws IOException {
         JSONObject getEditUnitInfo = FileToJson.getDictionary("getPersonalSnapshotSocialSecurityInfo");
         return getEditUnitInfo.toString();

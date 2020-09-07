@@ -172,7 +172,7 @@ public class Result {
             "                \"city\": 110101,\n" +
             "                \"district\": 110108,\n" +
             "                \"address\": \"XXX路X号院XX号楼一单元5层502门\",\n" +
-            "                \"image\": \"group1_TTAwLzAwLzAwL3JCUVZaRjdoLUdTQWVXY3VBQUFPN2JPeFU3NDc1OS5qcGc=\" \n" +
+            "                \"image\": \"15f17b21b35e4fd5a8a55f5166f2883b\" \n" +
             "            } ],\n" +
             "        \"educationInfo\": {\n" +
             "            \"xlData\": [\n" +
@@ -218,8 +218,8 @@ public class Result {
             "                \"duty\": \"工程师\" \n" +
             "            } ],\n" +
             "            \"fileInfo\": {\n" +
-            "                \"perImage\": \"group1_TTAwLzAwLzAwL3JCUVZaRjdoLUdTQWVXY3VBQUFPN2JPeFU3NDc1OS5qcGc=\",\n" +
-            "                \"zcImage\": \"group1_TTAwLzAwLzAwL3JCUVZaRjdoLUhLQUM3Nl9BQUlIRGwxUktLczA4NS5qcGc=\"\n" +
+            "                \"perImage\": \"15f17b21b35e4fd5a8a55f5166f2883b\",\n" +
+            "                \"zcImage\": \"eb6232545355ef4a321b9d342cf7f06e\"\n" +
             "            }\n" +
             "    } \n" +
             "}";
