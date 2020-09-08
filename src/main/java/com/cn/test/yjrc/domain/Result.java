@@ -75,11 +75,7 @@ public class Result {
             "            \"emergencyName\": \"李四\",\n" +
             "            \"emergencyPhone\": \"15000000000\"\n" +
             "        }\n" +
-            "    ],\n" +
-            "        \"fileInfo\": {\n" +
-            "            \"businessLicenseImage\": \"group1_TTAwLzAwLzAwL3JCUVZaRjdpNF9lQWNZelNBQURNUlAxNVdGSTA0NC5qcGc=\",\n" +
-            "            \"qualifiedImage\": \"group1_TTAwLzAwLzAwL3JCUVZaRjdpNUR5QUY0ZUtBQUNXdTRldE5qazEyNC5qcGc=\"\n" +
-            "        }\n" +
+            "    ]"+
             "}" +
             "}";
 
@@ -155,73 +151,53 @@ public class Result {
             "\n" +
             "}";
     public static String person_baisc="{\n" +
-            "    \"status\": 200,\n" +
-            "    \"msg\": \"success\",\n" +
-            "    \"result\": {\n" +
-            "        \"personalInfo\": [\n" +
-            "            {\n" +
-            "                \"perName\": \"测试用户\",\n" +
-            "                \"gender\": 0,\n" +
-            "                \"perPhone\": \"13800138000\",\n" +
-            "                \"nation\": 1,\n" +
-            "                \"political\": 0,\n" +
-            "                \"perType\": 0,\n" +
-            "                \"perCode\": \"110108198800000000\",\n" +
-            "                \"province\": 11,\n" +
-            "                \"marital\": 1,\n" +
-            "                \"city\": 110101,\n" +
-            "                \"district\": 110108,\n" +
-            "                \"address\": \"XXX路X号院XX号楼一单元5层502门\",\n" +
-            "                \"image\": \"15f17b21b35e4fd5a8a55f5166f2883b\" \n" +
-            "            } ],\n" +
-            "        \"educationInfo\": {\n" +
-            "            \"xlData\": [\n" +
-            "                {\n" +
-            "                    \"xlState\": 40,\n" +
-            "                    \"xlCode\": \"XL0123456789\",\n" +
-            "                    \"state\": 0,\n" +
-            "                    \"date\": \"2019-01-06\",\n" +
-            "                    \"reason\": \"学历认证报告编号与最高学历不匹配\" \n" +
-            "                } ],\n" +
-            "            \"xwData\": [\n" +
-            "                {\n" +
-            "                    \"xwState\": 20,\n" +
-            "                    \"xwCode\": \"XW0123456789\",\n" +
-            "                    \"state\": 1,\n" +
-            "                    \"date\": \"2019-01-06\",\n" +
-            "                    \"reason\": \"\" \n" +
-            "                } ],\n" +
-            "            \"zcData\": [\n" +
-            "                {\n" +
-            "                    \"zcState\": 1,\n" +
-            "                    \"zcInfo\": [\n" +
-            "                        {\n" +
-            "                            \"zcName\": \"高级工程师\",\n" +
-            "                            \"zcOrgan\": \"北京市人力资源和社会保障局\",\n" +
-            "                            \"zcCode\": \"zc1234567\" \n" +
-            "                        } ] \n" +
-            "                } ] \n" +
-            "        },\n" +
-            "        \"workExperience\": [\n" +
-            "            {\n" +
-            "                \"startDate\": \"2017-03-01\",\n" +
-            "                \"endDate\": \"2020-12-31\",\n" +
-            "                \"unitName\": \"首都信息发展股份有限公司\",\n" +
-            "                \"location\": 11,\n" +
-            "                \"duty\": \"项目经理\" \n" +
-            "            },\n" +
-            "            {\n" +
-            "                \"startDate\": \"2013-09-01\",\n" +
-            "                \"endDate\": \"2017-03-01\",\n" +
-            "                \"unitName\": \"北京科技公司\",\n" +
-            "                \"location\": 11,\n" +
-            "                \"duty\": \"工程师\" \n" +
-            "            } ],\n" +
-            "            \"fileInfo\": {\n" +
-            "                \"perImage\": \"15f17b21b35e4fd5a8a55f5166f2883b\",\n" +
-            "                \"zcImage\": \"eb6232545355ef4a321b9d342cf7f06e\"\n" +
-            "            }\n" +
-            "    } \n" +
+            " \"personalInfo\": [{\n" +
+            "  \"perName\": \"测试用户\",\n" +
+            "  \"gender\": 0,\n" +
+            "  \"perPhone\": \"13800138000\",\n" +
+            "  \"nation\": 1,\n" +
+            "  \"political\": 0,\n" +
+            "  \"perType\": 0,\n" +
+            "  \"perCode\": \"110108198800000000\",\n" +
+            "  \"province\": 11,\n" +
+            "  \"marital\": 1,\n" +
+            "  \"city\": 110101,\n" +
+            "  \"district\": 110108,\n" +
+            "  \"address\": \"XXX路X号院XX号楼一单元5层502门\"\n" +
+            " }],\n" +
+            " \"educationInfo\": {\n" +
+            "  \"xlData\": [{\n" +
+            "   \"xlState\": 40,\n" +
+            "   \"xlCode\": \"XL0123456789\"\n" +
+            "  }],\n" +
+            "  \"xwData\": [{\n" +
+            "   \"xwState\": 20,\n" +
+            "   \"xwCode\": \"XW0123456789\"\n" +
+            "  }],\n" +
+            "  \"zcData\": [{\n" +
+            "   \"zcState\": 1,\n" +
+            "   \"zcInfo\": [{\n" +
+            "    \"zcName\": \"高级工程师\",\n" +
+            "    \"zcOrgan\": \"北京市人力资源和社会保障局\",\n" +
+            "    \"zcCode\": \"zc1234567\"\n" +
+            "   }]\n" +
+            "  }]\n" +
+            " },\n" +
+            " \"workExperience\": [{\n" +
+            "   \"startDate\": \"2017-03-01\",\n" +
+            "   \"endDate\": \"2020-12-31\",\n" +
+            "   \"unitName\": \"首都信息发展股份有限公司\",\n" +
+            "   \"location\": 11,\n" +
+            "   \"duty\": \"项目经理\"\n" +
+            "  },\n" +
+            "  {\n" +
+            "   \"startDate\": \"2013-09-01\",\n" +
+            "   \"endDate\": \"2017-03-01\",\n" +
+            "   \"unitName\": \"北京科技公司\",\n" +
+            "   \"location\": 11,\n" +
+            "   \"duty\": \"工程师\"\n" +
+            "  }\n" +
+            " ]\n" +
             "}";
 
 
